@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 manager = DatabaseManager(DATABASE)
 manager.create_tables()
 
-# # A command for user registration
+# A command for user registration
 @bot.command()
 async def start(ctx):
     user_id = ctx.author.id
