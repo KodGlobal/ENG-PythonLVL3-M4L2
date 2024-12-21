@@ -21,7 +21,7 @@ async def start(ctx):
         await ctx.send("You are registered already!")
     else:
         manager.add_user(user_id, ctx.author.name)
-         await ctx.send("""Hi! Welcome! You have been successfully registered! You'll be receiving new images every minute, and you'll have a chance to get them! To do this, you need to click on the 'Get!' button! Only the first three users to click the 'Get!' button will get the image! =)""")
+        await ctx.send("""Hi! Welcome! You have been successfully registered! You'll be receiving new images every minute, and you'll have a chance to get them! To do this, you need to click on the 'Get!' button! Only the first three users to click the 'Get!' button will get the image! =)""")
 
 # A scheduled task for sending images
 @tasks.loop(minutes=1)
